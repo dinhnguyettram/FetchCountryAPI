@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.jumbotron {
+    background: url('../images/bg1.jpg') no-repeat center center/cover;
+}
+
+.jumbotron .container {
+    background: #00000080;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 8vh 0;
+}
+
+
+/* banner */
+
+.banner {
+    background: url('../images/bg2.jpg') no-repeat center center/cover;
+    height: 60vh;
+}
+
+#home-photo .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+#home-photo img {
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#home-photo p,
+#home-photo h4 {
+    justify-self: start;
+    padding: 0rem 1rem;
+}
+
+#home-photo button {
+    margin: 0rem 1rem;
+}
+
+.card {
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background: #fff;
+    /* padding: 0rem 1rem 1rem; */
+    align-items: center;
+    border: 1.25px solid rgb(204, 199, 199);
+    border-radius: 7px;
+}
+
+.card-2 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background: #fff;
+    /* padding: 1rem; */
+    align-items: center;
+    border: 1.25px solid rgb(204, 199, 199);
+    border-radius: 7px;
+}
+
+.btn {
+    background: #fff;
+    color: green;
+    border: 1.25px solid rgb(26, 181, 75);
+}
+
+#contact .map {
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-green {
+    color: rgb(20, 133, 20);
+}
+
+button[type="submit"] {
+    color: #fff;
+    background: rgb(20, 133, 20);
+}
+
+hr {
+    color: #bfbdbd !important;
+    height: 1px !important;
+    border: 1px solid grey !important;
+    width: 90%;
+    margin: 0 0 10px 0;
+}
+
+.results {
+    position: absolute;
+    height: 0px;
+    background: white;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 4px grey;
+    display: none;
+    transition: height 300ms;
+    top: 56px;
+    color: black;
+    text-align: left;
+    text-shadow: none;
+    text-transform: capitalize;
+}
+
+.search-wrapper {
+    width: 50%;
+    margin: auto;
+    position: relative;
+    flex-direction: column;
+}
+
+button.results-btn {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    display: none;
+}
+
+ul.results-list li:hover {
+    background: #dbffdb;
+    cursor: pointer;
+}
+
+
+/* .card>hr {
+    margin-right: 0;
+    margin-left: 13px;
+} */
